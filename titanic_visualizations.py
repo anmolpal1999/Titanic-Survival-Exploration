@@ -3,16 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 def filter_data(data, condition):
-    """
-    Remove elements that do not match the condition provided.
-    Takes a data list as input and returns a filtered list.
-    Conditions should be a list of strings of the following format:
-      '<field> <op> <value>'
-    where the following operations are valid: >, <, >=, <=, ==, !=
     
-    Example: ["Sex == 'male'", 'Age < 18']
-    """
-
     field, op, value = condition.split(" ")
     
     # convert value into number or strip excess quotes if string
